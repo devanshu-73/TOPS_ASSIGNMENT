@@ -138,4 +138,5 @@ System boundary
 The system boundary is a visual limitation of the entire system module. For complex systems, there may be many system boundaries that represent smaller, more specific modules. For example, a business use case diagram may have system boundaries for smaller components, such as marketing, sales and accounting.
 
 - **Use-case on bill payment on paytm**
-    ![Use-case](https://th.bing.com/th/id/OIP.FDKeA658o1PSXPtoBQ2T1QAAAA?w=218&h=184&c=7&r=0&o=5&pid=1.7)
+  
+![Use-case](https://th.bing.com/th/id/OIP.FDKeA658o1PSXPtoBQ2T1QAAAA?w=218&h=184&c=7&r=0&o=5&pid=1.7)
