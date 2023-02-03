@@ -1,32 +1,23 @@
 # Module 1 (Overview of IT Industry)
 
-### **1. What is software?**
-    Software is a set of instructions, data or programs used to operate computers and execute specific tasks. It is the opposite 
-    of hardware, which describes the physical aspects of a computer. Software is a generic term used to refer to applications, 
-    scripts and programs that run on a device. It can be thought of as the variable part of a computer, while hardware is the 
-    invariable part.
+### **1. What is software? What is software engineering?**
+**SOFTWARE :** Software is a set of instructions, data or programs used to operate computers   
+    and execute specific tasks. It is the opposite of hardware, which describes the physical aspects of a computer. Software is a generic term used to refer to applications, scripts and programs that run on a device. It can be thought of as the variable part of a computer, while hardware is the invariable part.
 
-### **2. Types of software.**
-    The two main categories of software are application software and system software. An application is software 
-    that fulfills a specific need or performs tasks. System software is designed to run a computer's hardware and 
-    provides a platform for applications to run on top of.
+**SOFTWARE ENGINEERING :** Software engineering is the process of designing, developing, testing, and maintaining software. It is a systematic and disciplined approach to software development that aims to create high-quality, reliable, and maintainable software. Software engineering includes a variety of techniques, tools, and methodologies, including requirements analysis, design, testing, and maintenance.
 
-### **3. What is Software Development Methodology?**
-    A software development methodology is a process by which developers design, implement and test new computer 
-    programs. Following a methodology benefits developers because these processes lay out a structured sequence of 
-    steps that guide professionals through each stage of development. Additionally, development methodologies often 
-    follow a design philosophy, which can help developers align their process and the product's features with its 
-    functional goals. For example, the developer may define what the software product does and what problems it 
-    solves for users as part of their design philosophy.
+**Some key principles of software engineering include:**
+**Modularity**: Breaking the software into smaller, reusable components that can be developed and tested independently.
+**Abstraction**: Hiding the implementation details of a component and exposing only the necessary functionality to other parts of the software.
+**Encapsulation**: Wrapping up the data and functions of an object into a single unit, and protecting the internal state of an object from external modifications.
+**Reusability**: Creating components that can be used in multiple projects, which can save time and resources.
+**Maintenance**: Regularly updating and improving the software to fix bugs, add new features, and address security vulnerabilities.
+**Testing**: Verifying that the software meets its requirements and is free of bugs.
+**Design Patterns**: Solving recurring problems in software design by providing templates for solving them.
+**Agile methodologies**: Using iterative and incremental development processes that focus on customer satisfaction, rapid delivery, and flexibility.
 
-### **4. What is Design Pattern?**
-    Design patterns represent the best practices used by experienced object-oriented software developers. Design patterns are solutions to 
-    general problems that software developers faced during software development. These solutions were obtained by trial and error by numerous 
-    software developers over quite a substantial period of time.
-
-## **Intermediate**
-
-### **1. What is the difference between Application software and System software?**
+### **2. Explain Types of software.**
+    The two main categories of software are  system software and application software.
     -> System Software :
     1. General-purpose software that manages basic system resources and processes
     2. Written in low-level assembly language or machine code
@@ -45,13 +36,11 @@
     6. Runs in the foreground and users work directly with the software to performs specific tasks
     7. Needs system software to run
     8. Isn't needed for the system to funtion
+    
+### **3. What is SDLC? Explain Each phase of SDLC.**
+    Software Development is the development of software for distinct purposes. For software development, there is a specific programming language like Java, Python, C/C++, etc. The entire process of software development isn’t as simple as its definition, it’s a complicated process. Accordingly, it requires an efficient approach from the developer in the form of the Software Development Life Cycle (SDLC). 
 
-### **2. Explain the SDLC. Each phase process.**
-    Software Development is the development of software for distinct purposes. For software development, there is a specific programming 
-    language like Java, Python, C/C++, etc. The entire process of software development isn’t as simple as its definition, it’s a complicated 
-    process. Accordingly, it requires an efficient approach from the developer in the form of the Software Development Life Cycle (SDLC). 
-
-    Proper planning and execution are the key components of a successful software development process. The entire software development process 
+    - Proper planning and execution are the key components of a successful software development process. The entire software development process 
     includes 6 stages. Software Development Life Cycle (SDLC) is the common term to summarize these 6 stages. 
 
     SDLC specifies the task(s) to be performed at various stages by a software engineer/developer. It ensures that the end product is able to 
