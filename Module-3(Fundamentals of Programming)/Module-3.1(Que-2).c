@@ -13,8 +13,7 @@ void main()
     printf("Enter 3 for Multiplication\n");
     printf("Enter 4 for Division\n");
     printf("Enter 5 for Modulo\n");
-
-
+    
     printf("enter your choice :");
     scanf("%d", &choice);
 
