@@ -1,4 +1,4 @@
-// Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans:5)
+// Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans : 5)
 #include <stdio.h>
 #include <string.h>
 void main()
@@ -8,9 +8,11 @@ void main()
     char len[10];
     printf("Enter Number : ");
     scanf("%d", &num);
+
     sprintf(len, "%d", num);
     length = strlen(len);
-    // printf("Length : %d ", length);
+
+    printf("Length : %d \n", length);
     for (int i = 0; i < length; i++)
     {
         rem[i] = num % 10;
