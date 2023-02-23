@@ -1,121 +1,26 @@
+// 1
+// 10
+// 101
+// 1010
+// 10101
 #include <stdio.h>
-
 void main()
 {
-    int i, j, n;
-    printf("Enter Number : ");
-    scanf("%d", &n);
+    int i, j;
 
-    for (i = 1; i <= n; i++)
+    for (i = 1; i <= 5; i++)
     {
-        for (j = 1; j <= n; j++)
+        for (j = 1; j <= i; j++)
         {
-            if (j <= i)
+            if (j%2 == 0)
             {
-                printf("* ");
+                printf("0");
             }
             else
             {
-                printf(" ");
+                printf("1");
             }
         }
         printf("\n");
     }
 }
-    // OUTPUT : *
-    //          * *
-    //          * * *
-    //          * * * *
-    //          * * * * *
-
-#include <stdio.h>
-
-void main()
-{
-    int i, j, n;
-    printf("Enter Number : ");
-    scanf("%d", &n);
-
-    for (i = 1; i <= n; i++)
-    {
-        for (j = 1; j <= n; j++) 
-        {
-            if (j <= (n+1)-i)
-            {
-                printf("* ");
-            }
-            else
-            {
-                printf(" ");
-            }
-        }
-        printf("\n");
-    }
-}
-// OUTPUT :
-// * * * * * 
-// * * * *
-// * * *
-// * *    
-// *
-#include <stdio.h>
-
-void main()
-{
-    int i, j, n;
-    printf("Enter Number : ");
-    scanf("%d", &n);
-
-    for (i = 1; i <= n; i++)
-    {
-        for (j = 1; j <= n; j++)
-        {
-            if (j >= 6-i)
-            {
-                printf("*");
-            }
-            else
-            {
-                printf(" ");
-            }
-        }
-        printf("\n");
-    }
-}
-// OUTPUT:
-//     *
-//    **
-//   ***
-//  ****
-// *****
-
-#include <stdio.h>
-
-void main()
-{
-    int i, j, n;
-    printf("Enter Number : ");
-    scanf("%d", &n);
-
-    for (i = 1; i <= n; i++)
-    {
-        for (j = 1; j <= n; j++)
-        {
-            if (j >= i)
-            {
-                printf("*");
-            }
-            else
-            {
-                printf(" ");
-            }
-        }
-        printf("\n");
-    }
-}
-// OUTPUT :
-// *****
-//  ****
-//   ***
-//    **
-//     *
