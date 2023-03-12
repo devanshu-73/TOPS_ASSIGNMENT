@@ -1,6 +1,5 @@
 // C++ Program to implement
 // Bubble sort
-// using template function
 #include <iostream>
 using namespace std;
 
