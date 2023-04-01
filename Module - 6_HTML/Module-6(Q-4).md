@@ -1,5 +1,13 @@
 # (Q - 4) : What are HTML Entities?
 
+    - If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+      Character entities are used to display reserved characters in HTML.
+
+    - A character entity looks like this:
+        &entity_name;
+        OR
+        &#entity_number;
+
 | Result | Description          | Entity Name | Entity Number |
 | ------ | -------------------- | ----------- | ------------- |
 |	     |non-breaking space	|   &nbsp     |&#160	      |
