@@ -24,6 +24,22 @@
              <td>D8</td>
          </tr>
     </table>
+<table>
+<tr>
+           <td colspan="2">D1</td>
+                <td>D2</td>
+            </tr>
+            <tr>
+                <td>D3</td>
+                <td>D4</td>
+                <td>D5</td>
+            </tr>
+            <tr>
+                <td>D6</td>
+                <td>D7</td>
+                <td>D8</td>
+            </tr>
+</table>
 
 ## How to use Rowspan Attribute
     - In the code below is a table with three rows and three columns. 
@@ -31,6 +47,22 @@
     - The number represents how many cells to use for the <td> tag.
 ### Example of Rowspan
     <table>
+        <tr>
+            <td rowspan="2">D1</td>
+            <td>D2</td>
+            <td>D3</td>
+        </tr>
+        <tr>
+            <td>D4</td>
+            <td>D5</td>
+        </tr>
+        <tr>
+            <td>D6</td>
+            <td>D7</td>
+            <td>D8</td>
+        </tr>
+    </table>
+<table>
         <tr>
             <td rowspan="2">D1</td>
             <td>D2</td>
