@@ -94,10 +94,7 @@
 
           const calculateTotal = (item) => (item.itemPrice * item.numItems)
 
-          const grandTotal = items.reduce(
-              (total, item) => total + calculateTotal(item),
-              0
-          );
+          const grandTotal = items.reduce((total, item) => total + calculateTotal(item),0);
 
           return (
               <div className="container">
