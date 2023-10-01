@@ -82,8 +82,8 @@
 
     - At this stage, the fundamental development of the product starts. For this, developers use a specific programming code as per the design in the DDS. Hence, it is important for the coders to follow the protocols set by the association.
 
-    - Conventional programming tools like compilers, interpreters, debuggers, etc. are also put
-    into use at this stage. Some popular languages like C/C++, Python, Java, etc. are put into use as per the software regulations.
+    - Conventional programming tools like compilers, interpreters, debuggers, etc. are also put into use at this stage.
+    Some popular languages like C/C++, Python, Java, etc. are put into use as per the software regulations.
 
 **• Stage-5: Product Testing and Integration:**
 
