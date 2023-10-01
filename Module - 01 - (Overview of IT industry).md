@@ -48,9 +48,10 @@
 ## **3. What is SDLC? Explain Each phase of SDLC.**
 
     - Software Development is the development of software for distinct purposes. For software development, there is a specific programming language
-    like Java, Python, C/C++, etc.The entire process of software development isn’t as simple as its definition, it’s a complicated process.    Accordingly, it requires an efficient approach from the developer in the form of the Software Development Life Cycle (SDLC).
+    like Java, Python, C/C++, etc.The entire process of software development isn’t as simple as its definition, it’s a complicated process.
+    Accordingly, it requires an efficient approach from the developer in the form of the Software Development Life Cycle (SDLC).
 
-    - Proper planning and execution are the key components of a successful software development process. The entire software development process 
+    - Proper planning and execution are the key components of a successful software development process. The entire software development process
     includes 6 stages. Software Development Life Cycle (SDLC) is the common term to summarize these 6 stages.
 
     -> SDLC specifies the task(s) to be performed at various stages by a software engineer/developer. It ensures that the end product is able to
