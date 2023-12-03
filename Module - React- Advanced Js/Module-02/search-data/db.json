@@ -1,0 +1,28 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Amanda Walter Shirt",
+      "price": "₹333",
+      "category": "Fashion"
+    },
+    {
+      "id": 2,
+      "name": "Alien Shirt",
+      "price": "₹70",
+      "category": "Fashion"
+    },
+    {
+      "id": 3,
+      "name": "Lake Almond Shirt",
+      "price": "₹63",
+      "category": "Fashion"
+    },
+    {
+      "id": 4,
+      "name": "Beach Shirt",
+      "price": "₹29",
+      "category": "Fashion"
+    }
+  ]
+}
