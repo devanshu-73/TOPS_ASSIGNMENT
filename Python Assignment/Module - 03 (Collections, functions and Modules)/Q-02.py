@@ -8,6 +8,6 @@ list1.pop()  # Removes the last element by Default
 print(list1)
 
 # what is list1 [-1]?
-# it simply accesses the last element of the list.
+# last element of the list because list also support -ve indexing
 list2 = [2, 33, 222, 14, 25]
 print(list2[-1]) # it prints 25
