@@ -2,8 +2,7 @@
 
 '''
   1) Lists are used to store multiple items in a single variable.
-  2) Lists are one of 4 built-in data types in Python used to store collections of data,
-     lists are mutable,ordered collection of elements
+  2) lists are mutable,ordered collection of elements
 '''
 list1 = [1,2,3,4,5,6,7,8]
 
