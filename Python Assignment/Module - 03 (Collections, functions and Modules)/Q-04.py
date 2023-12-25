@@ -1,9 +1,6 @@
 #  Write a Python function to get the largest number, smallest num and sum of all from a list.
 
 def func1(list1):
-    if not list1:
-        return None, None, None  # Return a tuple of None for an empty list
-    
     largest = smallest = list1[0]
     total_sum = 0
     
@@ -19,14 +16,13 @@ def func1(list1):
             smallest = num
 
     return largest, smallest, total_sum
-    
 
-list1 = [1,2,3]
-result = func1(list1)
-
-if result:  # Check if the result is not None before accessing elements
+# list1 = []
+list1 = [1,2,100,3,5,6]
+if not list1:
+    print("Empty list...")
+else:
+    result = func1(list1)
     print("Largest Number:", result[0])
     print("Smallest Number:", result[1])
     print("Sum of All Numbers:", result[2])
-else:
-    print("Empty list...")
