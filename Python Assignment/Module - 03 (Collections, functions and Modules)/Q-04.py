@@ -19,10 +19,10 @@ def func1(list1):
 
 # list1 = []
 list1 = [1,2,100,3,5,6]
-if not list1:
-    print("Empty list...")
-else:
+if list1:
     result = func1(list1)
     print("Largest Number:", result[0])
     print("Smallest Number:", result[1])
     print("Sum of All Numbers:", result[2])
+else:
+    print("Empty list...")
