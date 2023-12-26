@@ -10,5 +10,5 @@ for item in tuple_1:
     else:
         unique.append(item)
 
-print("Repeated items in the tuple:", repeated_items)
+print("Repeated items :", repeated_items)
 # print(" :", unique)
