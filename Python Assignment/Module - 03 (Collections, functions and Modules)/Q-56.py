@@ -2,5 +2,5 @@
 
 import random
 
-random_number = random.randint(1,10)
-print("Random number with seed:", random_number)
+random_number = random.randint(7,20)
+print("Random number :", random_number)
