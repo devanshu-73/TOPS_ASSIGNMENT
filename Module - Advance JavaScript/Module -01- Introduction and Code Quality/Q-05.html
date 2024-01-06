@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="age">
+    <input type="submit" value="Submit" onclick="check_Age(this)">
+
+    <script>
+
+        function check_Age(age) {
+            var age = document.getElementById("age").value;
+
+            if (age > 18) {
+                alert("You are eligible....");
+            }
+            else {
+                var parent_confirmation = confirm("You are not eligible, did your parents allow you?");
+                if (parent_confirmation == true) {
+                    alert("You will come to this Tour at your own Risk.");
+                }
+                else {
+                    alert("You will not come for this Tour.");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

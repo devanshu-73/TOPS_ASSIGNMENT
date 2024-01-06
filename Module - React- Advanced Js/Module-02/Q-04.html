@@ -1,0 +1,54 @@
+<!-- (Q-04) : How to used JavaScript Output method? -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- 1) Using innerHTML -->
+    <!-- To access an HTML element, JavaScript can use the document.getElementById(id) method. -->
+
+    <!-- The id attribute defines the HTML element. The innerHTML property defines the HTML content: -->
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML =
+        "innerHTML Method : " + (5 + 6);
+    </script>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- 2)Using document.write() For testing purposes, it is convenient to use -->
+    <!-- document.write() -->
+
+    <script>
+      document.write("Write Method : ", 5 + 6);
+    </script>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- 3) Using window.alert() -->
+    <!-- You can use an alert box to display data -->
+
+    <script>
+      window.alert(5 + 6);
+    </script>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    
+    <!-- 4) Using console.log() -->
+    <!-- For debugging purposes, you can call the console.log() method in the browser to display data -->
+   
+   <script>
+      console.log("Console-Method : ", 5 + 6);
+    </script>
+   
+   <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+  </body>
+</html>

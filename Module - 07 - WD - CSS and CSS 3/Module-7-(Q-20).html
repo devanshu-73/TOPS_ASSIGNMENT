@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0rem 8rem;
+        }
+
+        section {
+            height: 90vh;
+            display: grid;
+            background-color: #ecf0f1;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(2, 50%);
+            gap: 1rem 2rem;
+            /* border: 1px solid black; */
+            padding: 2rem 4rem;
+        }
+
+        .box {
+            grid-template-rows: 5fr 1fr 1fr;
+            border: 1px solid rgba(0, 0, 0, 0.19);
+            display: grid;
+
+        }
+
+        .box .top {
+            background-color: #394a4b;
+        }
+
+        .box .top span {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+        }
+
+        .box .mid {
+            text-align: justify;
+            padding: .7rem;
+            background-color: white;
+        }
+        
+        .box .bottom {
+            background-color: white;
+            padding: 0.7rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box .bottom a {
+            color: black;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        span button{
+            cursor: pointer;
+            padding: 0.5rem;
+            width: 4rem;
+            border-radius: .4rem;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box box-1">
+            <div class="top"><span>Thumbnail</span></div>
+            <div class="mid">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptate illum deleniti dolore
+                asperiores maxime quidem amet provident!
+            </div>
+            <div class="bottom">
+                <span>
+                    <button class="btn1">View</button>
+                    <button class="btn2">Edit</button>
+                </span>
+                <a href="#">More</a>
+            </div>
+        </div>
+        <div class="box box-2">
+            <div class="top"><span>Thumbnail</span></div>
+            <div class="mid">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptate illum deleniti dolore
+                asperiores maxime quidem amet provident!
+            </div>
+            <div class="bottom">
+                <span>
+                    <button class="btn1">View</button>
+                    <button class="btn2">Edit</button>
+                </span>
+                <a href="#">More</a>
+            </div>
+        </div>
+        <div class="box box-3">
+            <div class="top"><span>Thumbnail</span></div>
+            <div class="mid">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptate illum deleniti dolore
+                asperiores maxime quidem amet provident!
+            </div>
+            <div class="bottom">
+                <span>
+                    <button class="btn1">View</button>
+                    <button class="btn2">Edit</button>
+                </span>
+                <a href="#">More</a>
+            </div>
+        </div>
+        <div class="box box-4">
+            <div class="top"><span>Thumbnail</span></div>
+            <div class="mid">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptate illum deleniti dolore
+                asperiores maxime quidem amet provident!
+            </div>
+            <div class="bottom">
+                <span>
+                    <button class="btn1">View</button>
+                    <button class="btn2">Edit</button>
+                </span>
+                <a href="#">More</a>
+            </div>
+        </div>
+        <div class="box box-5">
+            <div class="top"><span>Thumbnail</span></div>
+            <div class="mid">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptate illum deleniti dolore
+                asperiores maxime quidem amet provident!
+            </div>
+            <div class="bottom">
+                <span>
+                    <button class="btn1">View</button>
+                    <button class="btn2">Edit</button>
+                </span>
+                <a href="#">More</a>
+            </div>
+        </div>
+        <div class="box box-6">
+            <div class="top"><span>Thumbnail</span></div>
+            <div class="mid">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptate illum deleniti dolore
+                asperiores maxime quidem amet provident!
+            </div>
+            <div class="bottom">
+                <span>
+                    <button class="btn1">View</button>
+                    <button class="btn2">Edit</button>
+                </span>
+                <a href="#">More</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

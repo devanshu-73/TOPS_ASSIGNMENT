@@ -1,0 +1,53 @@
+{
+  "user": [
+    {
+      "id": "16987",
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "123",
+      "mobile": "7465"
+    },
+    {
+      "id": "0822",
+      "name": "tirth",
+      "email": "tirth@gmail.com",
+      "password": "123",
+      "mobile": "98465135"
+    },
+    {
+      "id": "3022",
+      "name": "dev",
+      "email": "dev@gmail.com",
+      "password": "456",
+      "mobile": "95632113"
+    },
+    {
+      "id": "4079",
+      "name": "Jay",
+      "email": "jay@gmail.com",
+      "password": "101",
+      "mobile": "9846162"
+    },
+    {
+      "id": "1734",
+      "name": "xyz",
+      "email": "xyz@gmai.com",
+      "password": "123",
+      "mobile": "465463"
+    },
+    {
+      "id": "2221",
+      "name": "pqr",
+      "email": "pqr@gmail.com",
+      "password": "123",
+      "mobile": "74874513"
+    },
+    {
+      "id": "5938",
+      "name": "mno",
+      "email": "mno@gmail.com",
+      "password": "123",
+      "mobile": "98798465"
+    }
+  ]
+}

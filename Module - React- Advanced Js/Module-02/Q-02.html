@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12),
+          0 2px 4px 0 rgba(0, 0, 0, 0.24);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Table Styles */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      /* Table Header Styles */
+      thead {
+        background-color: #f5f5f5;
+      }
+
+      thead th {
+        padding: 10px;
+        text-align: left;
+      }
+
+      /* Table Body Styles */
+      tbody td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      /* Input Styles */
+      input {
+        padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* Custom Input Styles */
+      .fruit-name-input,
+      .item-price-input,
+      .num-items-input {
+        border: none;
+        background-color: #f9f9f9;
+      }
+
+      /* Total Styles */
+      .total-cell {
+        font-weight: bold;
+      }
+
+      /* Grand Total Styles */
+      .grand-total-label {
+        text-align: right;
+        font-weight: bold;
+      }
+
+      .grand-total {
+        font-weight: bold;
+        color: #ff5733;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const { useState } = React;
+
+      function App() {
+          const [items, setItems] = useState([
+              { id: 1, fruitName: "Apple", itemPrice: 10, numItems: 2 },
+              { id: 2, fruitName: "Banana", itemPrice: 15, numItems: 3 },
+              { id: 3, fruitName: "Orange", itemPrice: 5, numItems: 4 },
+          ]);
+
+          const handleItemChange = (index, key, value) => {
+              setItems((prevItems) => {
+                  const updatedItems = [...prevItems];
+                  updatedItems[index] = { ...updatedItems[index], [key]: value };
+                  return updatedItems;
+              });
+          };
+
+          const calculateTotal = (item) => (item.itemPrice * item.numItems)
+
+          const grandTotal = items.reduce((total, item) => total + calculateTotal(item),0);
+
+          return (
+              <div className="container">
+                  <h3>
+                      Calculate subtotal price of quantity in JavaScript
+                  </h3>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th className="fruit-name">Fruit Name</th>
+                              <th className="item-price">Item Price</th>
+                              <th className="num-items">Number of Items</th>
+                              <th className="total">Total</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          {items.map((item, index) => (
+                              <tr key={item.id}>
+                                  <td>
+                                      <input
+                                          type="text"
+                                          value={item.fruitName}
+                                          onChange={(e) =>
+                                              handleItemChange(index, "fruitName", e.target.value)
+                                          }
+                                          className="fruit-name-input"
+                                      />
+                                  </td>
+                                  <td>
+                                      <input
+                                          type="number"
+                                          value={item.itemPrice}
+                                          onChange={(e) =>
+                                              handleItemChange(
+                                                  index,
+                                                  "itemPrice",
+                                                  parseFloat(e.target.value)
+                                              )
+                                          }
+                                          className="item-price-input"
+                                      />
+                                  </td>
+                                  <td>
+                                      <input
+                                          type="number"
+                                          value={item.numItems}
+                                          onChange={(e) =>
+                                              handleItemChange(
+                                                  index,
+                                                  "numItems",
+                                                  parseInt(e.target.value)
+                                              )
+                                          }
+                                          className="num-items-input"
+                                      />
+                                  </td>
+                                  <td className="total-cell">{calculateTotal(item)}</td>
+                              </tr>
+                          ))}
+                          <tr>
+                              <td colSpan="3" className="grand-total-label">
+                                  Grand Total
+                              </td>
+                              <td className="grand-total">{grandTotal}</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("app"));
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.14.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.14.0/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  </body>
+</html>

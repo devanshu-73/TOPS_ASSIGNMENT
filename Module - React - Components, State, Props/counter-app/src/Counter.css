@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(94, 94, 165);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#title{
+    text-align: center;
+}
+#center{
+    color: black;
+    font-size: xx-large;
+    font-weight: 900;
+}
+#minus,
+#plus {
+  padding: 1rem 2rem;
+  font-size: x-large;
+}
