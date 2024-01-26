@@ -1,0 +1,15 @@
+{% extends 'app/product_manager.html' %}
+
+{% block content %}
+  <h2>{{ product.product_name }} Details</h2>
+  <ul>
+    {% for detail in details %}
+      <li>
+        Price: {{ detail.price }}<br>
+        Model: {{ detail.model }}<br>
+        RAM: {{ detail.ram }}<br>
+        <img width="150px" height="180px" src="{{ detail.image.url }}" alt="{{ detail.model }} Image">
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
