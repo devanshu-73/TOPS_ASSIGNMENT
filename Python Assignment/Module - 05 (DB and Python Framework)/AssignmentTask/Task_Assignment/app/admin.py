@@ -1,4 +1,4 @@
-# myapp/admin.py
+# app/admin.py
 from django.contrib import admin
 from .models import ProductMst, ProductSubCat
 

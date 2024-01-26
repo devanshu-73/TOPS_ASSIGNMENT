@@ -1,4 +1,4 @@
-# myapp/models.py
+# app/models.py
 from django.db import models
 
 class ProductMst(models.Model):
