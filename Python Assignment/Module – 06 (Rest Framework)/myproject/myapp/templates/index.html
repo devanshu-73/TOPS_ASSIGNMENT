@@ -10,7 +10,7 @@
     <h1>Book CRUD Operations</h1>
 
     <!-- Book Form -->
-    <form method="post" action="{% url 'book-list' %}">
+    <form method="post" action="{% url 'book-list-create' %}">
       {% csrf_token %}
       <h2>Add/Edit Book</h2>
       <label for="title">Title:</label>
@@ -27,33 +27,31 @@
 
       <input type="submit" value="Submit" />
     </form>
-
+    
     <!-- Display Book List -->
     <h2>Book List</h2>
     <table border="1">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Book Title</th>
-          <th>Book Author</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for book in books %}
-        <tr>
-          <td>{{book.id}}</td>
-          <td>{{ book.title }}</td>
-          <td>{{ book.author }}</td>
-          <td>
-            <form method="post" action="{% url 'book-list' %}">
-              {% csrf_token %}
-              <input type="hidden" name="id" value="{{ book.id }}">
-              <input type="hidden" name="_method" value="DELETE">
-              <input type="submit" value="Delete">
-            </form>
-          </td>
-        </tr>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Book Title</th>
+                <th>Book Author</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{ book.id }}</td>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>
+                    <form method="post" action="{% url 'delete-book' book.id %}"">
+                        {% csrf_token %}
+                            <input type="submit" value="Delete">
+                    </form>
+                    </td>
+                </tr>
         {% endfor %}
       </tbody>
     </table>

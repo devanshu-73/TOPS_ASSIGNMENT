@@ -1,8 +1,9 @@
 # myapp/urls.py
 from django.urls import path
-from . import views
+from .views import index, book_list_create,delete_view
 
 urlpatterns = [
-    path('api/books/', views.book_list, name='book-list'),
+    path('', index, name='index'), 
+    path('books/', book_list_create, name='book-list-create'),
+    path('<int:id>', delete_view, name='delete-book'),
 ]
-
