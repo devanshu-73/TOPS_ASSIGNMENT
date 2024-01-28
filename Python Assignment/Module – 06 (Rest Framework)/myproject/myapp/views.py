@@ -1,15 +1,17 @@
-# books/views.py
-from django.http import HttpResponse
+# myapp/views.py
+from django.shortcuts import render, redirect
+from .models import *
+
+# Api 
+from .serializers import BookSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from django.shortcuts import render, redirect
-from .models import Book
-from .serializers import BookSerializer
 
 def index(request):
     books = Book.objects.all()
     return render(request, 'index.html', {'books': books})
+
 def delete_view(request,id):
     book_id = id
     if book_id:
